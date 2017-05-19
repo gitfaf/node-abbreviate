@@ -1,0 +1,2 @@
+# node-abbreviate
+abbreviate input
