@@ -1,0 +1,25 @@
+{
+  "name": "node-abbreviate",
+  "version": "1.0.0",
+  "description": "Abbreviate strings",
+  "main": "abbreviate.js",
+  "scripts": {
+    "test": "node abbreviate.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitfaf/node-abbreviate.git"
+  },
+  "keywords": [
+    "node",
+    "abbreviate",
+    "strings",
+    "abbreviate"
+  ],
+  "author": "Git Faf <git.faf@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gitfaf/node-abbreviate/issues"
+  },
+  "homepage": "https://github.com/gitfaf/node-abbreviate#readme"
+}
