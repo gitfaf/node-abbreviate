@@ -24,11 +24,23 @@ function test_abbreviateStrings() {
   console.log(out[1] === expected[1]);
 }
 
-function runTests () {
-  test_abbreviateString();
-  test_abbreviateStrings();
-  test_abbreviateStringByLength();
+function test_uppercaseAutoAbbreviate () {
+  const expected = "RI";
+  let out = abr.uppercaseAutoAbbreviate("Republic of India");
+  console.log(out === expected);
 }
+
+function runTests () {
+  console.log('test_abbreviateString');
+  test_abbreviateString();
+  console.log('test_abbreviateStrings');
+  test_abbreviateStrings();
+  console.log('test_abbreviateStringByLength');
+  test_abbreviateStringByLength();
+  console.log('test_uppercaseAutoAbbreviate');
+  test_uppercaseAutoAbbreviate();
+}
+
 runTests();
 
 module.exports = runTests;
