@@ -1,3 +1,8 @@
+# 2.0.1
+
+1. Readme update.
+
+
 # 2.0.0
 
 1. Introduces index.js
