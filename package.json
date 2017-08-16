@@ -1,6 +1,6 @@
 {
   "name": "node-abbreviate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Abbreviate strings",
   "main": "abbreviate.js",
   "scripts": {
