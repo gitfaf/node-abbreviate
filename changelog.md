@@ -1,3 +1,9 @@
+# 1.0.4
+
+Published on 16 August, 2017.
+
+1. Fixed a mis-test.
+
 # 1.0.3
 
 Published on 16 August, 2017.

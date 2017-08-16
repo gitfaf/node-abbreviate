@@ -3,7 +3,12 @@
 const abr = require('./abbreviate');
 
 function test_abbreviateStringByLength() {
-  const expected =  {abbreviated: "AT", shortened: "an-t", rest: "u-tu", length: 4};
+  const expected = {
+    abbreviated: "AT",
+    shortened: "an-t",
+    rest: "u-tu",
+    length: 4
+  };
   let out = abr.abbreviateStringByLength('an-tu-tu', 4, /[ -]/);
   console.log(out.abbreviated === expected.abbreviated);
   console.log(out.shortened === expected.shortened);
@@ -12,25 +17,25 @@ function test_abbreviateStringByLength() {
 }
 
 function test_abbreviateString() {
-  const expected =  ["GFGF"];
-  let out = abr.abbreviateStrings(['git-faf Git Faf'], /[- ]/);
+  const expected = "GFGF";
+  let out = abr.abbreviateString('git-faf Git Faf', /[- ]/);
   console.log(out[0] === expected[0]);
 }
 
 function test_abbreviateStrings() {
-  const expected =  ["ATT", "USA"];
+  const expected = ["ATT", "USA"];
   let out = abr.abbreviateStrings(['an-tu-tu', 'united states of america'], /[- of]/);
   console.log(out[0] === expected[0]);
   console.log(out[1] === expected[1]);
 }
 
-function test_uppercaseAutoAbbreviate () {
+function test_uppercaseAutoAbbreviate() {
   const expected = "RI";
   let out = abr.uppercaseAutoAbbreviate("Republic of India");
   console.log(out === expected);
 }
 
-function runTests () {
+function runTests() {
   console.log('test_abbreviateString');
   test_abbreviateString();
   console.log('test_abbreviateStrings');
