@@ -1,8 +1,8 @@
 {
   "name": "node-abbreviate",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Abbreviate strings",
-  "main": "abbreviate.js",
+  "main": "index.js",
   "scripts": {
     "test": "node abbreviate.test.js"
   },
@@ -12,9 +12,9 @@
   },
   "keywords": [
     "node",
-    "abbreviate",
     "strings",
-    "abbreviate"
+    "abbreviate",
+    "unabbreviate"
   ],
   "author": "Git Faf <git.faf@gmail.com>",
   "license": "MIT",

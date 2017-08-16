@@ -9,17 +9,17 @@ function abbreviateString (input, re) {
 }
 
 function abbreviateStrings (inputs, re) {
-  return inputs                                       /* inputs is an array of strings; returns an array. */
-          .filter(i => i.length > 0)                  /* take only the non-empty strings */
-          .map(i => abbreviateString(i, re));         /* send every string to get abbreviation */
+  return inputs                                       // inputs is an array of strings; returns an array. */
+          .filter(i => i.length > 0)                  // take only the non-empty strings */
+          .map(i => abbreviateString(i, re));         // send every string to get abbreviation */
 }
 
 function uppercaseAutoAbbreviate (input) {
   /* selects only the uppercased letters and returns simplest abbreviation */
-  return input                                        /* Input string */
-          .split('')                                  /* create array out of string */
-          .filter(i => i >= 'A' && i <= 'Z')          /* only the uppercased letters */
-          .reduce((a, c) => a + c, '');               /* prepare a string out of it. */
+  return input                                        // Input string */
+          .split('')                                  // create array out of string */
+          .filter(i => i >= 'A' && i <= 'Z')          // only the uppercased letters */
+          .reduce((a, c) => a + c, '');               // prepare a string out of it. */
 }
 
 function abbreviateStringByLength (input, length, re) {
@@ -35,8 +35,10 @@ function abbreviateStringByLength (input, length, re) {
 }
 
 module.exports = {
-  abbreviateString,
-  abbreviateStrings,
-  abbreviateStringByLength,
-  uppercaseAutoAbbreviate
+  abbreviate: {
+    aString: abbreviateString,
+    stringByLength: abbreviateStringByLength,
+    manyStrings: abbreviateStrings,
+    autoUppercase: uppercaseAutoAbbreviate
+  }
 };
